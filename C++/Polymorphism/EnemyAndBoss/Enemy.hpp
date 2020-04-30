@@ -13,13 +13,17 @@ using std::cout;
 
 class Enemy {
 	protected:
-		int m_Damage;
+		int* m_pDamage;
 
 	public:
-		Enemy(int dam = 10) { m_Damage = dam; }
+		Enemy(int dam = 10) { 
+			m_pDamage = new int;
+			*m_pDamage = dam;
+		}
+		Enemy(const Enemy&);
 		void attack();
 		virtual void taunt();
-
+		~Enemy() { delete m_pDamage; }
 };
 
 #endif

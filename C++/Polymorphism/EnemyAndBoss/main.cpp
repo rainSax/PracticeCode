@@ -20,5 +20,11 @@ int main() {
 	for (int i = 0; i < SIZE; i++)
 		enemies[i]->taunt();
 
+	Enemy* copiedEnemy = enemies[0];
+	Enemy* copiedBoss = enemies[SIZE - 1];
+
+	copiedEnemy->taunt();
+	copiedBoss->taunt();
+
 	return 0;
 }

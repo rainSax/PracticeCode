@@ -6,8 +6,13 @@
 
 #include "Boss.hpp"
 
+Boss::Boss(const Boss& obj) {
+	p_multiplier = new int;
+	*p_multiplier = *obj.p_multiplier;
+}
+
 void Boss::megaAttack() {
-	cout << "Boss inflicts " << (m_Damage * multiplier) << " damage!\n";
+	cout << "Boss inflicts " << (*m_pDamage * (*p_multiplier)) << " damage!\n";
 }
 
 void Boss::taunt() {

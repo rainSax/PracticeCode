@@ -11,14 +11,17 @@
 
 class Boss : public Enemy {
 	private:
-		int multiplier;
+		int* p_multiplier;
 	public:
 		Boss() : Enemy(30) {
 			srand(time(0));
-			multiplier = (rand() % (10 - 1 + 1)) + 1;
+			p_multiplier = new int;
+			*p_multiplier = (rand() % (10 - 1 + 1)) + 1;
 		}
+		Boss(const Boss&);
 		void megaAttack();
 		virtual void taunt();
+		~Boss() { delete p_multiplier; }
 };
 
 #endif

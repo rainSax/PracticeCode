@@ -6,8 +6,13 @@
 
 #include "Enemy.hpp"
 
+Enemy::Enemy(const Enemy& obj) {
+	m_pDamage = new int;
+	*m_pDamage = *obj.m_pDamage;
+}
+
 void Enemy::attack() {
-	cout << "Attack inflicts " << m_Damage << " damage!\n";
+	cout << "Attack inflicts " << *m_pDamage << " damage!\n";
 }
 
 void Enemy::taunt() {
