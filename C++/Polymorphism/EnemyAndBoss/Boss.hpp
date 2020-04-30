@@ -21,7 +21,7 @@ class Boss : public Enemy {
 		Boss(const Boss&);
 		void megaAttack();
 		virtual void taunt();
-		~Boss() { delete p_multiplier; }
+		virtual ~Boss() { delete p_multiplier; }
 };
 
 #endif

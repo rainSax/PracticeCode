@@ -23,7 +23,7 @@ class Enemy {
 		Enemy(const Enemy&);
 		void attack();
 		virtual void taunt();
-		~Enemy() { delete m_pDamage; }
+		virtual ~Enemy() { delete m_pDamage; }
 };
 
 #endif
