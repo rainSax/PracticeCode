@@ -26,5 +26,10 @@ int main() {
 	copiedEnemy->taunt();
 	copiedBoss->taunt();
 
+	for (int i = 0; i < SIZE; i++) {
+		delete enemies[i];
+		enemies[i] = nullptr;
+	}
+
 	return 0;
 }
