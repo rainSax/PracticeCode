@@ -18,6 +18,7 @@ class Boss : public Enemy {
 			multiplier = (rand() % (10 - 1 + 1)) + 1;
 		}
 		void megaAttack();
+		virtual void taunt();
 };
 
 #endif

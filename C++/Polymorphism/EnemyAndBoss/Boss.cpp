@@ -9,3 +9,7 @@
 void Boss::megaAttack() {
 	cout << "Boss inflicts " << (m_Damage * multiplier) << " damage!\n";
 }
+
+void Boss::taunt() {
+	cout << "I will defeat you! And laugh heartily!\n";
+}

@@ -6,13 +6,19 @@
 
 #include "Boss.hpp"
 
+const int SIZE = 10;
+
 int main() {
 
-	Enemy pawn;
-	Boss demon;
+	Enemy* enemies[SIZE];
+	for (int i = 0; i < (SIZE / 2); i++)
+		enemies[i] = new Enemy;
 
-	pawn.attack();
-	demon.megaAttack();
+	for (int i = (SIZE / 2); i < SIZE; i++)
+		enemies[i] = new Boss;
+
+	for (int i = 0; i < SIZE; i++)
+		enemies[i]->taunt();
 
 	return 0;
 }
