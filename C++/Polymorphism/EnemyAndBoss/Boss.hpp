@@ -15,7 +15,7 @@ class Boss : public Enemy {
 	public:
 		Boss() : Enemy(30) {
 			srand(time(0));
-			multiplier = rand() % 10;
+			multiplier = (rand() % (10 - 1 + 1)) + 1;
 		}
 		void megaAttack();
 };
