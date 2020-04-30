@@ -18,6 +18,7 @@ class Enemy {
 	public:
 		Enemy(int dam = 10) { m_Damage = dam; }
 		void attack();
+		void taunt();
 
 };
 
