@@ -11,6 +11,12 @@ Enemy::Enemy(const Enemy& obj) {
 	*m_pDamage = *obj.m_pDamage;
 }
 
+Enemy& Enemy::operator=(const Enemy& right) {
+	if (this != &right)
+		*(this->m_pDamage) = *right.m_pDamage;
+	return *this;
+}
+
 void Enemy::attack() {
 	cout << "Attack inflicts " << *m_pDamage << " damage!\n";
 }

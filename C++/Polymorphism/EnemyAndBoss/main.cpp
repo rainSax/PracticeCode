@@ -26,6 +26,19 @@ int main() {
 	copiedEnemy->taunt();
 	copiedBoss->taunt();
 
+	Enemy one(10), two(20), three(30);
+	one.attack();
+	two.attack();
+	three.attack();
+
+	cout << "\nTesting overloaded assignment operator\n";
+
+	//testing overloaded assignment operator
+	one = two = three;
+	one.attack();
+	two.attack();
+	three.attack();
+
 	for (int i = 0; i < SIZE; i++) {
 		delete enemies[i];
 		enemies[i] = nullptr;

@@ -19,6 +19,7 @@ class Boss : public Enemy {
 			*p_multiplier = (rand() % (10 - 1 + 1)) + 1;
 		}
 		Boss(const Boss&);
+		Boss& operator=(const Boss&);
 		void megaAttack();
 		virtual void taunt();
 		virtual ~Boss() { delete p_multiplier; }

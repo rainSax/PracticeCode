@@ -21,6 +21,7 @@ class Enemy {
 			*m_pDamage = dam;
 		}
 		Enemy(const Enemy&);
+		Enemy& operator=(const Enemy&);
 		void attack();
 		virtual void taunt();
 		virtual ~Enemy() { delete m_pDamage; }
