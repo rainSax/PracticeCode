@@ -9,6 +9,7 @@
 #include "Chicken.hpp"
 #include "Barn.hpp"
 #include "Coop.hpp"
+#include "Egg.hpp"
 
 int main() {
 

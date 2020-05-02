@@ -9,12 +9,12 @@
 
 #include "Building.hpp"
 #include "Animal.hpp"
-//#include "Food.hpp"
+#include "Food.hpp"
 
 class Barn : public Building {
 	private:
 		vector<Animal> animals;
-		//vector<Food> foodStuffs;
+		vector<Food> foodStuffs;
 	public:
 		void storeFood();
 		void takeFood();

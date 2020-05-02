@@ -8,11 +8,12 @@
 #define COOP_H
 
 #include "Building.hpp"
+#include "Egg.hpp"
 
 class Coop : public Building {
 	private:
 		vector<Chicken> chickens;
-		//vector<Egg> eggs;
+		vector<Egg> eggs;
 	public:
 		void takeEggs();
 		void storeChicken();
