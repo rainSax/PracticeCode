@@ -7,6 +7,10 @@
 #ifndef BUILDING_H
 #define BUILDING_H
 
+#include <vector>
+
+using std::vector;
+
 class Building {
 	protected:
 		int integrity;

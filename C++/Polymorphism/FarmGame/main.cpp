@@ -7,6 +7,8 @@
 #include "Cow.hpp"
 #include "Sheep.hpp"
 #include "Chicken.hpp"
+#include "Barn.hpp"
+#include "Coop.hpp"
 
 int main() {
 
