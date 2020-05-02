@@ -14,8 +14,8 @@ class Sheep : public Animal {
 		int wool;
 	public: 
 		Sheep() { wool = 0; }
-		void beSheared { wool = 0; }
-		void growWool { wool += 5; }
-}
+		void beSheared() { wool = 0; }
+		void growWool() { wool += 5; }
+};
 
 #endif

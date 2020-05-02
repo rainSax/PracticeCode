@@ -19,6 +19,6 @@ class Animal {
 		}
 		void eat() { hunger = 0; }
 		void growHunger() { hunger += 10; }
-}
+};
 
 #endif

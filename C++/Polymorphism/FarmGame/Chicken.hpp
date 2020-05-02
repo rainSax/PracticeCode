@@ -15,6 +15,6 @@ class Chicken : public Animal {
 		Chicken() { eggLevel = 0; }
 		void layEgg() { eggLevel = 0; }
 		void growEgg() { eggLevel += 15; }
-}
+};
 
 #endif

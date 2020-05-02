@@ -16,6 +16,6 @@ class Cow : public Animal {
 		Cow() { milk = 0; }
 		void beMilked() { milk = 0; }
 		void makeMilk() { milk += 10; }
-}
+};
 
 #endif
